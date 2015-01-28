@@ -1,0 +1,22 @@
+1  What is the difference between an API and a server?
+
+An API is the representation of data that is stored on a server (e.g. a DB server). A server is where the logic and data resides to serve an API. By adhering to 6 properties of how API behave, it is easier for data to be shared.
+
+2  what does a DNS server do when you type "www.google.com" into an address bar?
+
+A DNS server replies to a request made by a client (e.g. a browser) to translate a domain into an IP address. The server sends back the IP address that belongs to that domain.
+
+3  What are some differences between a single page application and a multipage application? List one example of each.
+
+1) A single page application allows part of the content  on the page to be changed without refreshing or redirecting to another page
+2) An MPA loads a full html page after each request, whereby an SPA uses AJAX requests to retrieve the data needed.
+3) A SPA needs javascript to use AJAX, MPA don't need this
+4) As a result, SPA are -overall- more efficient with bandwidth because it is less redundant than MPA's.
+
+4  Why do we use RESTful routes?
+
+It is easy to distinguish between data, and what to do with that data. Having this distinction allows us to use the same route with different HTML verbs (e.g. get, put, delete). It is also easier to communicate this to DB operations (if needed).
+
+5  What is an API key and why are they used?
+
+Every request to an API demands resources from the server. Even though resource usage can be optimized, it makes sense to have API users to register themselves. Having users identify themselves with an API key reduces the risk of abuse/hacking.
